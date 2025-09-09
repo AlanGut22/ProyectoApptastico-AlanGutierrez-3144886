@@ -507,6 +507,7 @@ footer {
         padding: 0 2rem;
 
         nav {
+            justify-content: center;
             img {
                 margin-bottom: 1.8rem;
             }
