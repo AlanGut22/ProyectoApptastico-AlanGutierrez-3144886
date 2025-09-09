@@ -239,7 +239,7 @@ header {
                 width: 75%;
 
                 .parrafo {
-                        margin-bottom: 0.5rem;
+                    margin-bottom: 0.5rem;
                 }
             }
         }
@@ -443,7 +443,7 @@ footer {
                 width: 100%;
                 text-align: center;
 
-                p{
+                p {
                     text-align: justify;
                 }
             }
@@ -522,7 +522,7 @@ footer {
             .info {
                 text-align: center;
 
-                h1{
+                h1 {
                     font-size: 1.8rem;
                 }
 
@@ -531,10 +531,6 @@ footer {
                     .btn-1,
                     .btn-2 {
                         font-weight: normal;
-                    }
-
-                    .btn-1 {
-                        padding: 0.7rem 0rem;
                     }
                 }
             }
@@ -575,7 +571,7 @@ footer {
                     }
 
 
-                    p{
+                    p {
                         text-align: justify;
                     }
                 }
@@ -583,7 +579,7 @@ footer {
         }
 
         .contenedor2 {
-            p{
+            p {
                 text-align: justify;
                 margin-bottom: 0.5rem;
             }
@@ -591,11 +587,18 @@ footer {
     }
 
     footer {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: block;
 
         p {
             margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .logos {
+            margin: auto;
+            width: 50%;
+            justify-content: space-around;
+            gap: 0;
         }
     }
 }
