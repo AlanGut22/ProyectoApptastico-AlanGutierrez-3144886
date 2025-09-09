@@ -22,6 +22,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         padding: 3rem 0;
 
         .links {
@@ -30,13 +31,16 @@ header {
             justify-content: space-between;
             list-style: none;
 
-            a {
-                text-decoration: none;
-                color: white;
+            li {
                 padding: 0.5rem 1.4rem;
             }
 
-            a:hover {
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .activado {
                 border-radius: 25px;
                 background: linear-gradient(to bottom, #2f3b45, #3d4a55);
                 box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 1px rgba(255, 255, 255, 0.1);
@@ -64,12 +68,10 @@ header {
 
             .parrafo1 {
                 padding: 1rem 0;
-                font-size: 1.2rem;
             }
 
             .parrafo2 {
                 color: #9a9a9b;
-                font-size: 1.2rem;
             }
 
             .botones {
@@ -115,6 +117,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .seccion-2 {
@@ -123,6 +126,7 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 
     .tarjeta {
         width: 26%;
@@ -160,7 +164,7 @@ header {
 .seccion-3 {
     padding: 6rem;
 
-    h2{
+    h2 {
         color: #4C5B66;
         font-weight: lighter;
         margin-bottom: 1.3rem;
@@ -170,13 +174,428 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         .imagen {
             width: 22%;
 
-            img{
+            img {
                 width: 100%;
             }
+        }
+    }
+}
+
+.seccion-4 {
+    padding: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h2 {
+        color: #4C5B66;
+        font-weight: lighter;
+    }
+
+    p {
+        line-height: 1.8;
+        color: #888888;
+    }
+
+    h3 {
+        font-weight: lighter;
+        color: #5C5C5C;
+    }
+
+    a {
+        text-decoration: none;
+        color: #3C92D0;
+    }
+
+    time {
+        color: #B0B0B0;
+        font-size: 0.8rem;
+    }
+
+    .contenedor1 {
+        width: 50%;
+
+        .texto1 {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .imagen {
+                width: 20%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .texto2 {
+                width: 75%;
+
+                .parrafo {
+                        margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .contenedor2 {
+        width: 40%;
+
+        .parrafos {
+            margin: 1.5rem 0;
+
+            span {
+                color: #515151;
+            }
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid #E8E8E8;
+    padding: 1rem 0;
+    margin: 0 6rem;
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        color: #8A8A8A;
+    }
+
+    .logos {
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+/* Media Queries */
+
+@media(max-width: 1279px) {
+    p {
+        line-height: normal;
+    }
+
+    header {
+        padding: 0 4rem;
+
+        nav {
+            padding: 2rem 0;
+        }
+
+        .cabeza {
+            .telefono {
+                width: 36%;
+            }
+
+            .info {
+                margin-bottom: 2rem;
+                width: 50%;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                .botones {
+                    .btn-1 {
+                        padding: 1rem 0.7rem;
+                        text-align: center;
+                    }
+
+                    p {
+                        margin: 0 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .seccion-2 {
+        padding: 4rem;
+
+        .tarjeta {
+            width: 30%;
+        }
+    }
+
+    .seccion-3 {
+        padding: 4rem;
+    }
+
+    .seccion-4 {
+        padding: 4rem;
+
+        p {
+            line-height: normal;
+        }
+
+        .contenedor1 {
+
+            .texto1 {
+                margin: 1.5rem 0;
+
+                .imagen {
+                    width: 28%;
+                }
+
+                .texto2 {
+                    width: 68%;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin: 0 4rem;
+    }
+}
+
+@media(max-width: 920px) {
+    header {
+        padding: 0 3rem;
+
+        .cabeza {
+            .telefono {
+                width: 36%;
+            }
+
+            .info {
+                margin-bottom: 2rem;
+                width: 55%;
+
+                .botones {
+                    .btn-1 {
+                        padding: 1rem 0.7rem;
+                        text-align: center;
+                    }
+
+                    p {
+                        margin: 0 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .seccion-2 {
+        padding: 3rem;
+    }
+
+    .seccion-3 {
+        padding: 3rem;
+    }
+
+    .seccion-4 {
+        padding: 3rem;
+
+        .contenedor1 {
+
+            .texto1 {
+                margin: 1.5rem 0;
+
+                .imagen {
+                    width: 30%;
+                }
+
+                .texto2 {
+                    width: 65%;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin: 0 3rem;
+    }
+}
+
+@media(max-width: 768px) {
+    header {
+        nav {
+            img {
+                margin-bottom: 1.8rem;
+            }
+
+            .links {
+                width: auto;
+
+                li {
+                    padding: 0.5rem 0.7rem;
+                }
+            }
+        }
+
+        .cabeza {
+            flex-wrap: wrap-reverse;
+
+            .telefono {
+                width: 80%;
+                margin: auto;
+            }
+
+            .info {
+                width: 100%;
+                text-align: center;
+
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .seccion-2 {
+        padding: 1rem 2rem;
+
+        .tarjeta {
+            width: 90%;
+            margin: 2rem auto;
+        }
+    }
+
+    .seccion-3 {
+        padding: 2rem;
+
+        .imagenes {
+            justify-content: space-evenly;
+
+            .imagen {
+                width: 40%;
+            }
+        }
+    }
+
+    .seccion-4 {
+        padding: 2rem;
+
+        .contenedor1 {
+            width: 100%;
+            margin-bottom: 2rem;
+
+            .texto1 {
+                margin: 1.5rem 0;
+
+                .imagen {
+                    width: 30%;
+                }
+
+                .texto2 {
+                    width: 65%;
+                }
+            }
+        }
+
+        .contenedor2 {
+            width: 100%;
+        }
+    }
+
+    footer {
+        margin: 0 2rem;
+        align-items: center;
+    }
+}
+
+@media(max-width: 480px) {
+    header {
+        padding: 0 2rem;
+
+        nav {
+            img {
+                margin-bottom: 1.8rem;
+            }
+
+            .links {
+                width: 20rem;
+            }
+        }
+
+        .cabeza {
+            flex-wrap: wrap-reverse;
+
+            .info {
+                text-align: center;
+
+                h1{
+                    font-size: 1.8rem;
+                }
+
+                .botones {
+
+                    .btn-1,
+                    .btn-2 {
+                        font-weight: normal;
+                    }
+
+                    .btn-1 {
+                        padding: 0.7rem 0rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .seccion-1 {
+        justify-content: space-evenly;
+
+        img {
+            width: 15%;
+        }
+    }
+
+    .seccion-2 {
+        .tarjeta {
+            width: 100%;
+        }
+    }
+
+    .seccion-4 {
+        padding: 2rem;
+
+        .contenedor1 {
+            .texto1 {
+                flex-wrap: wrap-reverse;
+
+                .imagen {
+                    width: 70%;
+                    margin: 1rem auto 0;
+                }
+
+                .texto2 {
+                    width: 100%;
+
+                    h3 {
+                        margin-bottom: 0.5rem;
+                    }
+
+
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+
+        .contenedor2 {
+            p{
+                text-align: justify;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        p {
+            margin-bottom: 1rem;
         }
     }
 }
