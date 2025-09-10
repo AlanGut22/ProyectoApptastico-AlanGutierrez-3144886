@@ -129,7 +129,7 @@ header {
     flex-wrap: wrap;
 
     .tarjeta {
-        width: 26%;
+        width: 30%;
 
         .texto {
             margin: 1.5rem 0;
@@ -156,7 +156,6 @@ header {
             border-radius: 0.4rem;
             box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.5), inset 0 -2px 4px rgba(0, 0, 0, 0.3);
             text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
-            /* relieve del texto */
         }
     }
 }
@@ -215,7 +214,7 @@ header {
 
     time {
         color: #B0B0B0;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .contenedor1 {
@@ -228,7 +227,7 @@ header {
             align-items: center;
 
             .imagen {
-                width: 20%;
+                width: 25%;
 
                 img {
                     width: 100%;
@@ -236,7 +235,7 @@ header {
             }
 
             .texto2 {
-                width: 75%;
+                width: 70%;
 
                 .parrafo {
                     margin-bottom: 0.5rem;
@@ -253,6 +252,10 @@ header {
 
             span {
                 color: #515151;
+            }
+
+            .tweets {
+                margin-bottom: 0.5rem;
             }
         }
     }
@@ -361,30 +364,20 @@ footer {
         padding: 0 3rem;
 
         .cabeza {
-            .telefono {
-                width: 36%;
-            }
 
             .info {
-                margin-bottom: 2rem;
                 width: 55%;
-
-                .botones {
-                    .btn-1 {
-                        padding: 1rem 0.7rem;
-                        text-align: center;
-                    }
-
-                    p {
-                        margin: 0 0.7rem;
-                    }
-                }
             }
         }
     }
 
     .seccion-2 {
         padding: 3rem;
+
+        .tarjeta {
+            width: 45%;
+            margin: 2rem auto;
+        }
     }
 
     .seccion-3 {
@@ -395,18 +388,26 @@ footer {
         padding: 3rem;
 
         .contenedor1 {
+            width: 100%;
+            margin-bottom: 2rem;
 
             .texto1 {
-                margin: 1.5rem 0;
-
                 .imagen {
                     width: 30%;
                 }
 
                 .texto2 {
                     width: 65%;
+
+                    h3 {
+                        margin-bottom: 0.5rem;
+                    }
                 }
             }
+        }
+
+        .contenedor2 {
+            width: 100%;
         }
     }
 
@@ -418,6 +419,8 @@ footer {
 @media(max-width: 768px) {
     header {
         nav {
+            justify-content: center;
+
             img {
                 margin-bottom: 1.8rem;
             }
@@ -446,6 +449,10 @@ footer {
                 p {
                     text-align: justify;
                 }
+
+                .botones {
+                    justify-content: center;
+                }
             }
         }
     }
@@ -454,8 +461,7 @@ footer {
         padding: 1rem 2rem;
 
         .tarjeta {
-            width: 90%;
-            margin: 2rem auto;
+            width: 70%;
         }
     }
 
@@ -473,27 +479,6 @@ footer {
 
     .seccion-4 {
         padding: 2rem;
-
-        .contenedor1 {
-            width: 100%;
-            margin-bottom: 2rem;
-
-            .texto1 {
-                margin: 1.5rem 0;
-
-                .imagen {
-                    width: 30%;
-                }
-
-                .texto2 {
-                    width: 65%;
-                }
-            }
-        }
-
-        .contenedor2 {
-            width: 100%;
-        }
     }
 
     footer {
@@ -506,22 +491,8 @@ footer {
     header {
         padding: 0 2rem;
 
-        nav {
-            justify-content: center;
-            img {
-                margin-bottom: 1.8rem;
-            }
-
-            .links {
-                width: 20rem;
-            }
-        }
-
         .cabeza {
-            flex-wrap: wrap-reverse;
-
             .info {
-                text-align: center;
 
                 h1 {
                     font-size: 1.8rem;
@@ -542,7 +513,7 @@ footer {
         justify-content: space-evenly;
 
         img {
-            width: 15%;
+            width: 13%;
         }
     }
 
@@ -553,24 +524,18 @@ footer {
     }
 
     .seccion-4 {
-        padding: 2rem;
 
         .contenedor1 {
             .texto1 {
-                flex-wrap: wrap-reverse;
+                flex-wrap: wrap;
 
                 .imagen {
                     width: 70%;
-                    margin: 1rem auto 0;
+                    margin: 0 auto 1rem;
                 }
 
                 .texto2 {
                     width: 100%;
-
-                    h3 {
-                        margin-bottom: 0.5rem;
-                    }
-
 
                     p {
                         text-align: justify;
