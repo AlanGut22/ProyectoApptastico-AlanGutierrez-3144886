@@ -490,8 +490,9 @@ footer {
 
         nav {
             .links {
+                justify-content: space-between;
                 li {
-                    padding: 0.5rem 0.7rem;
+                    padding: 0.5rem 0.8rem;
                 }
             }
         }
