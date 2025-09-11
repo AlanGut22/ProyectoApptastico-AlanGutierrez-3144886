@@ -426,11 +426,8 @@ footer {
             }
 
             .links {
-                width: auto;
-
-                li {
-                    padding: 0.5rem 0.7rem;
-                }
+                width: 100%;
+                justify-content: space-evenly;
             }
         }
 
@@ -490,6 +487,14 @@ footer {
 @media(max-width: 480px) {
     header {
         padding: 0 2rem;
+
+        nav {
+            .links {
+                li {
+                    padding: 0.5rem 0.7rem;
+                }
+            }
+        }
 
         .cabeza {
             .info {
