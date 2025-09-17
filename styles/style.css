@@ -467,9 +467,10 @@ footer {
 
         .imagenes {
             justify-content: space-evenly;
+            gap: 1rem;
 
             .imagen {
-                width: 40%;
+                width: 45%;
             }
         }
     }
@@ -491,6 +492,7 @@ footer {
         nav {
             .links {
                 justify-content: space-between;
+
                 li {
                     padding: 0.5rem 0.8rem;
                 }
